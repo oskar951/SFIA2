@@ -1,5 +1,6 @@
 from flask import Flask
+import requests
 
 app = Flask(__name__)
 
-from api2 import routes
+from application import routes
