@@ -6,6 +6,8 @@ import random
 @app.route('/word', methods=['GET'])
 def secondword():
 
-	list = ['Dude','Company','Beast','Croc']
+	list2 = ['Dude','Company','Beast','Croc']
+
+	word2 = random.choice(list2)
 	
-	return list[random.randrange(3)]
+	return word2

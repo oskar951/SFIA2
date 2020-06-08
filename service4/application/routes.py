@@ -3,7 +3,7 @@ from application import app
 import requests
 
 
-@app.route('/bothwords', methods=['GET'])
+@app.route('/bothwords', methods=['GET', 'POST'])
 def username():
     firstword = requests.get('http://service2:5001/word')
     secondword = requests.get('http://service3:5002/word')
@@ -61,4 +61,4 @@ def username():
 
 
     else:
-        return "Something went wrong!"
+        return firstword
