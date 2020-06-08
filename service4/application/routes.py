@@ -1,13 +1,15 @@
 from flask import render_template, request
-from application import app
+from application import app, db
 import requests
+from application.models import usernames
+
 
 
 @app.route('/bothwords', methods=['GET', 'POST'])
 def username():
-    firstword = requests.get('http://service2:5001/word')
-    secondword = requests.get('http://service3:5002/word')
-    response = firstword.text + secondword.text
+    firstword = requests.get('http://service2:5001/word').text
+    secondword = requests.get('http://service3:5002/word').text
+    response = firstword + secondword
     
     if secondword == 'Dude':
         addUsername =  usernames (
@@ -19,7 +21,7 @@ def username():
         )
         db.session.add(addUsername)
         db.session.commit()
-        return response + "Your group is The Dudes"
+        return "your username is:" + " " + response + " " + "Your group is The Dudes"
 
     elif secondword == 'Company':
         addUsername =  usernames (
@@ -31,7 +33,7 @@ def username():
         )
         db.session.add(addUsername)
         db.session.commit()
-        return response + "Your group is The Company"
+        return "your username is:" + " " + response + " " + "Your group is The Company"
 
 
     elif secondword == 'Beast':
@@ -44,7 +46,7 @@ def username():
         )
         db.session.add(addUsername)
         db.session.commit()
-        return response + "Your group is The Beasts"
+        return "your username is:" + " " + response + " " + "Your group is The Beasts"
 
 
     elif secondword == 'Croc':
@@ -57,8 +59,8 @@ def username():
         )
         db.session.add(addUsername)
         db.session.commit()
-        return response + "Your group is The Crocs"
+        return "your username is:" + " " + response + " " + "Your group is The Crocs"
 
 
     else:
-        return firstword
+        return "Error"

@@ -19,5 +19,22 @@
             <button onclick="window.location.reload();">
                 Generate Username
             </button>
+
+
+
+            {% for user in userData %}
+
+                <h3>{{ user.user_name }}</h3>
+    
+                <p> Your chosen Team: {{ user.group }}</p>
+
+            {% endfor %}
+
+
+
+
+
+
+
         </body>
     </html>   
