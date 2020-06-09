@@ -1,17 +1,25 @@
 - name: install docker
-  hosts: servers
+  hosts: web
+  become: true
+  roles:
+    - docker-installation
+
+- name: install docker
+  hosts: 127.0.0.1 
+  connection: local
   become: true
   roles:
     - docker-installation
 
 - name: initialise docker swarm
-  hosts: localhost
+  hosts: 127.0.0.1 
+  connection: local
   become: true
   roles:
     - docker-swarm-init
 
 - name: add workers to the swarm
-  hosts: swarm-workers
+  hosts: web
   become: true
   roles:
     - docker-swarm-add-workers    
