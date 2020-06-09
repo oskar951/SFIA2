@@ -1,8 +1,7 @@
 version: '3.7'
 services:
   service1:
-    image: service1
-    build: ./service1
+    image: oskar951/service1
     ports:
     - target: 5000
       published: 5000
@@ -11,16 +10,14 @@ services:
       SFIA2DB: ${SFIA2DB}
   
   service2:
-    image: service2
-    build: ./service2
+    image: oskar951/service2
     ports:
     - target: 5001
       published: 5001
       protocol: tcp
 
   service3:
-    image: service3
-    build: ./service3
+    image: oskar951/service3
     ports:
     - target: 5002
       published: 5002
@@ -28,8 +25,7 @@ services:
 
 
   service4:
-    image: service4
-    build: ./service4
+    image: oskar951/service4
     ports:
     - target: 5003
       published: 5003
@@ -38,12 +34,9 @@ services:
       SFIA2DB: ${SFIA2DB}
 
   nginx:
-    image: nginx:latest
+    image: oskar951/nginx
     ports:
     - target: 80
       published: 80
       protocol: tcp
-    volumes:
-    - type: bind
-      source: ./nginx/nginx.conf
-      target: /etc/nginx/nginx.conf
+    
