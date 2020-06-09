@@ -8,6 +8,8 @@ services:
       protocol: tcp
     environment:
       SFIA2DB: ${SFIA2DB}
+    deploy:
+      replicas: 3
   
   service2:
     image: oskar951/service2
@@ -15,6 +17,8 @@ services:
     - target: 5001
       published: 5001
       protocol: tcp
+    deploy:
+      replicas: 1
 
   service3:
     image: oskar951/service3
@@ -22,6 +26,8 @@ services:
     - target: 5002
       published: 5002
       protocol: tcp
+    deploy:
+      replicas: 1
 
 
   service4:
@@ -32,6 +38,8 @@ services:
       protocol: tcp
     environment:
       SFIA2DB: ${SFIA2DB}
+    deploy:
+      replicas: 3
 
   nginx:
     image: oskar951/nginx
