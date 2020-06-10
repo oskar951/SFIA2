@@ -6,7 +6,7 @@ apt install -y python
 
 apt install -y python-pip
 
-cat ~/.bashrc > ~/install1.log
+
 
 # make sure ~/.local/bin exists and is on your PATH
 mkdir -p ~/.local/bin
@@ -21,4 +21,3 @@ pip3 install --user ansible
 # check that ansible has been installed
 ansible --version
 
-cat ~/.bashrc > ~/install2.log
