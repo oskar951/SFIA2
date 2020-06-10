@@ -31,10 +31,10 @@ Here is my continuous integration and deployment pipeline
 
 ### Trello Project Tracking
 
-Using Trello, I tracked my project along the way with a Kanban style board which allowed me to see my progress and things that need to be done.
+Using Trello, I tracked my project along the way with a Kanban style board which allowed me to see my progress and things that need to be done. Here is the inital board:
 
 
-![Trello Board](https://github.com/oskar951/Game-Review-Library/blob/master/Images/.jpg)
+![Trello Board](https://github.com/oskar951/SFIA2/blob/master/Images/Trello1.jpg)
 
 ## Risk Assessment
 
@@ -43,6 +43,10 @@ In my risk assessment I have listed possible risks with the project. I added the
 ![Risk Assessment](https://github.com/oskar951/SFIA2/blob/master/Images/RiskAssessment1.jpg)
 
 I then reviewed my risks towards the end of the project to see which control measures are implemented and whether I avoided those risks or not.
+
+Here is my Risk Matrix with some of them added in:
+
+![Risk Matrix](https://github.com/oskar951/SFIA2/blob/master/Images/RiskMatrix.jpg)
 
 ## Testing
 
