@@ -17,6 +17,9 @@ The practical project for QA consulting.
 
 ## Brief
 
+This project requires a set of 4 microservices which work with eachother using HTTP requests to achieve a single outcome on the front-end. The output data needs to be persisted and retrieved from the database onto a page so that previous outcomes can be viewed even after new ones are made. 
+
+Docker needs to be used for containersiation with swarm and stack to load balance on another virtual machine(s). Jenkins must be used to perform Ansible configuration and deployment. 
 
 ## Architecture
 
