@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source ~/.bashrc
 #fix docker.sock permission denied
 sudo chmod 666 /var/run/docker.sock
 
