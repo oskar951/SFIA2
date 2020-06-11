@@ -27,9 +27,9 @@ I have used a simple database hosted on GCP which stores the outputs of my app e
 
 The application consists of 4 services which break down the funcionality of the app.
 
-**Service 1 -** This is the service which houses the HTML page that delivers the content and queries the database. It collects the data from service 4 and outputs the information to the user.
-**Service 2 -** Generates a random beginning for the username from a select list.
-**Service 3 -** Generates a random ending for the username from a select list.
+**Service 1 -** This is the service which houses the HTML page that delivers the content and queries the database. It collects the data from service 4 and outputs the information to the user.  
+**Service 2 -** Generates a random beginning for the username from a select list.  
+**Service 3 -** Generates a random ending for the username from a select list.  
 **service 4 -** Here is where the data from service 2 and 3 is requested and put together. Each ending of the username from service 3 corresponds to a certain group so this service follows rules to assign the usernames to those groups.
 
 
