@@ -41,10 +41,18 @@ services:
     deploy:
       replicas: 3
 
-  nginx:
-    image: oskar951/nginx
+  nginx_service:
+    image: oskar951/nginxservice
     ports:
     - target: 80
       published: 80
       protocol: tcp
+    depends_on: 
+    - service1
+    - service2
+    - service3
+    - service4
+    deploy:
+      replicas: 3
+
     
