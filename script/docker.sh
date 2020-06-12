@@ -21,7 +21,5 @@ docker service update --force --update-parallelism 1 --update-delay 30s --image 
 docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service4
 docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/nginxservice
 
-docker stack deploy --compose-file docker-compose.yaml stackdemo
-
 docker restart $(docker ps -a -q)
 
