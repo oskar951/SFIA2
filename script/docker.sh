@@ -15,11 +15,7 @@ docker push oskar951/service3
 docker push oskar951/service4
 docker push oskar951/nginxservice
 
-docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service1 stackdemo_service1
-docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service2 stackdemo_service1
-docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service3 stackdemo_service1
-docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service4 stackdemo_service1
-docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/nginxservice stackdemo_nginx_service
+docker stack deploy --compose-file docker-compose.yaml stackdemo
 
 docker restart $(docker ps -a -q)
 
