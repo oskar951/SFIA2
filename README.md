@@ -7,6 +7,7 @@ The practical project for QA consulting.
 1. [Brief](#Brief)
 2. [Architecture](#Architecture)
 3. [Risk Assessment](#Risk-Assessment)
+4. [Deployment Activities](#Deployment)
 5. [Testing](#Testing)
 6. [Front End Design/Result](#Front-End-Design/Result)
 7. [Workflow and Tools](#Workflow-and-Tools-Used)
@@ -63,6 +64,8 @@ I then reviewed my risks towards the end of the project to see which control mea
 Here is my Risk Matrix with some of them added in:
 
 ![Risk Matrix](https://github.com/oskar951/SFIA2/blob/master/Images/RiskMatrix.jpg)
+
+## Deployment
 
 ## Testing
 
