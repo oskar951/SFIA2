@@ -18,7 +18,7 @@ services:
       published: 5001
       protocol: tcp
     deploy:
-      replicas: 1
+      replicas: 3
 
   service3:
     image: oskar951/service3
@@ -27,7 +27,7 @@ services:
       published: 5002
       protocol: tcp
     deploy:
-      replicas: 1
+      replicas: 3
 
 
   service4:
