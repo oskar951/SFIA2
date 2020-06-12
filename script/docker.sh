@@ -15,11 +15,11 @@ docker push oskar951/service3
 docker push oskar951/service4
 docker push oskar951/nginxservice
 
-docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service1
-docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service2
-docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service3
-docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service4
-docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/nginxservice
+docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service1 oskar951/service1
+docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service2 oskar951/service2
+docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service3 oskar951/service3
+docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/service4 oskar951/service4
+docker service update --force --update-parallelism 1 --update-delay 30s --image oskar951/nginxservice oskar951/nginxservice
 
 docker restart $(docker ps -a -q)
 
