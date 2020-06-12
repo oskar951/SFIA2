@@ -84,8 +84,7 @@ My final test coverage is at 89% with some website routes still needing testing.
 ### Front End Result
 
 
-![Home page](https://github.com/oskar951/Game-Review-Library/blob/master/Images/.jpg)
-![Review page](https://github.com/oskar951/Game-Review-Library/blob/master/Images/.jpg)
+![Frontend](https://github.com/oskar951/SFIA2/blob/master/Images/Frontend.jpg)
 
 [Back to top](#Index)
 
@@ -103,6 +102,10 @@ Here is a workflow for creating the app:
 * Git - Versions Control System
 * Trello - Project Tracking
 * GCP - Cloud Server
+* Docker - Containerisation tool
+* Docker Swarm - Container orchestration tool
+* Ansible - Configuration and deployment tool
+* NGINX - Reverse proxy web server
 
 ## Improvements to Make in the Future
 
