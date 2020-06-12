@@ -25,6 +25,8 @@ Docker needs to be used for containersiation with swarm and stack to load balanc
 
 I have used a simple database hosted on GCP which stores the outputs of my app each time the generate button is clicked. The data is then queried from this database and shown on the home page underneath the generator.
 
+![Data Table](https://github.com/oskar951/SFIA2/blob/master/Images/Table.jpg)
+
 The application consists of 4 services which break down the funcionality of the app.
 
 **Service 1 -** This is the service which houses the HTML page that delivers the content and queries the database. It collects the data from service 4 and outputs the information to the user.  
