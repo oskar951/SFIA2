@@ -17,5 +17,5 @@ docker push oskar951/nginxservice
 
 docker stack deploy --compose-file docker-compose.yaml stackdemo
 
-docker restart $(docker ps -a -q)
+
 
