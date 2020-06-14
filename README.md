@@ -7,7 +7,7 @@ The practical project for QA consulting.
 1. [Brief](#Brief)
 2. [Architecture](#Architecture)
 3. [Risk Assessment](#Risk-Assessment)
-4. [Deployment Activities](#Deployment)
+4. [Activities and Results](#Activities-and-Results)
 5. [Testing](#Testing)
 6. [Front End Design/Result](#Front-End-Design/Result)
 7. [Workflow and Tools](#Workflow-and-Tools-Used)
@@ -104,7 +104,7 @@ Here is my Risk Matrix with some of them added in:
 
 ![Risk Matrix](https://github.com/oskar951/SFIA2/blob/master/Images/RiskMatrix.jpg)
 
-## Deployment
+## Activities and Results
 
 Firstly I have created the applications services and their logic. I made sure to cover all the requirements for the application and then added docker and created my docker-compose file which will build images from the services Dockerfiles. I then used docker-compose up to deploy this initial application and it resulted in a few errors which I promptly fixed in order to see my application working. The logic worked and generated the necessary data. 
 
