@@ -69,14 +69,17 @@ Here is my Risk Matrix with some of them added in:
 
 ## Testing
 
-In my inital testing to see the response code for my pages(home, about, addgames, games, review) to see if those pages are shown to the user. All the tests passed with a total coverage of 55%
+I tested each service separately and made coverage reports for each one. I did not manage do do mock testing therefore service 1 and 4 is not up to 100%.
 
-Adding some more tests got me to 86% with more testing needed on forms and routes.
-![Test coverage1](https://github.com/oskar951/Game-Review-Library/blob/master/Images/CoverageReport1.jpg)
+![Service1 Test](https://github.com/oskar951/SFIA2/blob/master/Images/Cov0.jpg)
 
-My final test coverage is at 89% with some website routes still needing testing. Tests have been made which add data to database and return the page with that data to show integration of databases.
+![Service2 Test](https://github.com/oskar951/SFIA2/blob/master/Images/Cov1.jpg)
 
-![Test coverage2](https://github.com/oskar951/Game-Review-Library/blob/master/Images/CoverageReport2.jpg)
+![Service3 Test](https://github.com/oskar951/SFIA2/blob/master/Images/Cov2.jpg)
+
+![Service4 Test](https://github.com/oskar951/SFIA2/blob/master/Images/Cov3.jpg)
+
+
 
 ## Front End Design/Result
 
