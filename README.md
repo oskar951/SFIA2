@@ -106,6 +106,20 @@ Here is my Risk Matrix with some of them added in:
 
 ## Deployment
 
+Firstly I have created the applications services and their logic. I made sure to cover all the requirements for the application and then added docker and created my docker-compose file which will build images from the services Dockerfiles. I then used docker-compose up to deploy this initial application and it resulted in a few errors which I promptly fixed in order to see my application working. The logic worked and generated the necessary data. 
+
+Now I have implemented and built my database and made my service 4 more complicated using if statements. The outcomes of service 2 and 3 are put together and groups are given depending on the rules in my code, this information is commited to the database and displayed on the home page using a for loop. After deploying this I checked the database and home page to see that data was being persisted correctly.
+
+The next step is to install ansible and configure the playbook and the roles which iniate docker swarm and add my second node to the master node as a worker. 
+
+I created a Jenkins pipeline and added the python, pip and ansible installation commands to an installations.sh file. I then made an ansible.sh file which initiated the ansible playbook and a docker.sh file which pushes images to dockerhub and uses docker stack to deploy the services from my compose.yaml file to the swarm. 
+
+I set up a webhook between Jenkins and github and pushed to github to see the pipeline being automatically started and my application is built using the Jenkins file which sets out the stages and order of the .sh files.
+
+The results were connection problems via SSH due to my jenkins user not having the correct ssh config and key files. After adding these the application connected but I had to fix problems with the sql connections as the database connection variables were not being saved. After fixing this the pipeline came back as a success and my application was running.
+
+I then set up the reverse proxy with nginx and also made sure each service had replicas. After my final deployment of the service I tested the application with an update to see if it stayed up throughout the pipeline build until the update was complete. After a refresh the changes appeared with no visible downtime.
+
 ## Testing
 
 I tested each service separately and made coverage reports for each one. I did not manage do do mock testing therefore service 1 and 4 is not up to 100%. Service 2 and 3 were covered to 100%, next time I would like to inlcude mock testing to allow for the responses from these services to be tested within service 4 and 1 so that they could also be fully covered.
