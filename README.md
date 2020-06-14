@@ -173,6 +173,10 @@ Here is a workflow for creating the app:
 
 ## Improvements to Make in the Future
 
+In future I would like to achieve full testing coverage. Also I hope to add more fucntionality the app and improve on the user experience. Also I would like to implement automatic testing.
+
+Improvements need to be made on how I document my progress to show what steps I take in the creation of the software. A closer analysis of problems and my solutions to them would be a great addition to my documentation. Diagrams to show the functioning of the back end when a user is using the app would also be a great addition.
+
 
 ## Acknowledgements
 
