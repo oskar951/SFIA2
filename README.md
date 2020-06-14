@@ -69,14 +69,18 @@ Here is my Risk Matrix with some of them added in:
 
 ## Testing
 
-I tested each service separately and made coverage reports for each one. I did not manage do do mock testing therefore service 1 and 4 is not up to 100%.
+I tested each service separately and made coverage reports for each one. I did not manage do do mock testing therefore service 1 and 4 is not up to 100%. Service 2 and 3 were covered to 100%, next time I would like to inlcude mock testing to allow for the responses from these services to be tested within service 4 and 1 so that they could also be fully covered.
 
+### Service 1
 ![Service1 Test](https://github.com/oskar951/SFIA2/blob/master/Images/Cov0.jpg)
 
+### Service 2
 ![Service2 Test](https://github.com/oskar951/SFIA2/blob/master/Images/Cov1.jpg)
 
+### Service 3
 ![Service3 Test](https://github.com/oskar951/SFIA2/blob/master/Images/Cov2.jpg)
 
+### Service 4
 ![Service4 Test](https://github.com/oskar951/SFIA2/blob/master/Images/Cov3.jpg)
 
 
