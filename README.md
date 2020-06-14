@@ -119,12 +119,13 @@ I tested each service separately and made coverage reports for each one. I did n
 
 ## Front End Design/Result
 
+The inital design was simple with no styling and only the required functionality.
 
-![Home page wireframe](https://github.com/oskar951/Game-Review-Library/blob/master/Images/.jpg)
-![Add review wireframe](https://github.com/oskar951/Game-Review-Library/blob/master/Images/.jpg)
+![wireframe](https://github.com/oskar951/SFIA2/blob/master/Images/Wireframe.jpg)
 
 ### Front End Result
 
+The outcome was much nicer and presentable.
 
 ![Frontend](https://github.com/oskar951/SFIA2/blob/master/Images/Frontend.jpg)
 
