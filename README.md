@@ -53,6 +53,12 @@ Using Trello, I tracked my project along the way with a Kanban style board which
 
 ![Trello Board](https://github.com/oskar951/SFIA2/blob/master/Images/Trello1.jpg)
 
+This is my board throughout the project when some things were in progress and others ocmpleted. I also added bugs that I encountered.
+![Trello Board](https://github.com/oskar951/SFIA2/blob/master/Images/Trello2.jpg)
+
+In the final board everything is complete apart from the documentation to which I was adding finishing touches. The bugs have been solved and solutions were added to the description of the cards.
+![Trello Board](https://github.com/oskar951/SFIA2/blob/master/Images/Trello3.jpg)
+
 ## Risk Assessment
 
 In my risk assessment I have listed possible risks with the project. I added the risks cause and effect as well as the likelihood of it happening, this is then followed by a control measure which can help negate the risk and give it a lower likelihood and consequence. 
