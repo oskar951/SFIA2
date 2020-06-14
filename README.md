@@ -156,7 +156,7 @@ The outcome was much nicer and presentable.
 
 Here is a workflow for creating the app:
 
-![WorkFlow](https://github.com/oskar951/Game-Review-Library/blob/master/Images/WorkFlow.jpg)
+![WorkFlow](https://github.com/oskar951/SFIA2/blob/master/Images/Workflow.jpg)
 
 * SQL - Database service
 * Python - Logic
