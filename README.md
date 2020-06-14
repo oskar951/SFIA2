@@ -45,7 +45,7 @@ The application consists of 4 services which break down the funcionality of the 
 
 Here is my continuous integration and deployment pipeline. The code I create is pushed up to github which activates Jenkins via a webhook, Progress is also updated in Trello.
 
-Jenkins starts building the project and runs the commands which make install python and ansible etc. Ansible then uses the playbook and the roles I have cosntructed for better structure to install Docker and its dependencies onto the master and worker node. It also initiates docker swarm and makes the main node into the swarm master as well as creating variables for the join tokens. It then uses those variables to add the worker node to the manager node. 
+Jenkins starts building the project and runs the commands which install python and ansible etc. Ansible then uses the playbook and the roles I have cosntructed for better structure to install Docker and its dependencies onto the master and worker node. It also initiates docker swarm and makes the main node into the swarm master as well as creating variables for the join tokens. It then uses those variables to add the worker node to the manager node. 
 
 After this is done Jenkins starts building the images for each service using their Dockerfiles. These are then pushed up to Dockerhub so that any changes are always built and pushed to keep the images updated. Each container built from the docker compose is given a different port and replicas are made from the information in the compose file. Environemnt variables are also set here. Docker stack is used to deploy all the services from the docker-compose.yaml file at once to the swarm.
 
