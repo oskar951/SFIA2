@@ -50,14 +50,40 @@ Here is my continuous integration and deployment pipeline
 
 Using Trello, I tracked my project along the way with a Kanban style board which allowed me to see my progress and things that need to be done. Here is the inital board:
 
-
 ![Trello Board](https://github.com/oskar951/SFIA2/blob/master/Images/Trello1.jpg)
 
-This is my board throughout the project when some things were in progress and others ocmpleted. I also added bugs that I encountered.
+This is my board throughout the project when some things were in progress and others completed. I also added bugs that I encountered.
 ![Trello Board](https://github.com/oskar951/SFIA2/blob/master/Images/Trello2.jpg)
 
 In the final board everything is complete apart from the documentation to which I was adding finishing touches. The bugs have been solved and solutions were added to the description of the cards.
 ![Trello Board](https://github.com/oskar951/SFIA2/blob/master/Images/Trello3.jpg)
+
+## MoSCoW
+
+### Must Have
+* Kanban style board for project tracking
+* Version control system using the feature branch model to implement developing code
+* CI server to automatically build and deploy software to a cloud hosted machine
+* Docker for containerisation
+* Docker swarm for container orchestration 
+* Ansible for configuring and deploying the application
+* 4 micro services which work together, are load balanced and replicated throughout nodes in order to stay up whilst being updated
+
+### Should Have
+* Clear and detailed documentation showing progress throughout the project and testing
+* The applciation provides an outcome dependant on rules
+* Designs for the project before it is started
+* Webhooks so that jenkins can build instantly when github has been updated
+
+### Could Have
+* More complicated service which asks for user input as well as providing the user with a generated output
+* Full CRUD funcionality
+* Security through proper firewall use and changing of passwords
+
+### Wont Have
+* Extra functionality allowing people to up or down vote the usernames that they get so that more popular name combinations can be provided
+* Fully integrated autoamtic testing with 100% coverage
+
 
 ## Risk Assessment
 
