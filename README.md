@@ -100,6 +100,8 @@ In my risk assessment I have listed possible risks with the project. I added the
 
 I then reviewed my risks towards the end of the project to see which control measures are implemented and whether I avoided those risks or not.
 
+![Risk Assessment2](https://github.com/oskar951/SFIA2/blob/master/Images/RiskAssessment2.jpg)
+
 Here is my Risk Matrix with some of them added in:
 
 ![Risk Matrix](https://github.com/oskar951/SFIA2/blob/master/Images/RiskMatrix.jpg)
